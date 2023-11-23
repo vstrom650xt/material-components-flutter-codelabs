@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//https://codelabs.developers.google.com/codelabs/mdc-103-flutter?hl=es-419#4
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -23,12 +24,20 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: Return an AsymmetricView (104)
     // TODO: Pass Category variable to AsymmetricView (104)
-    return const Scaffold(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('SHRINE'),
+
+        // TODO: Add buttons and title (102)
+      ),
+
       // TODO: Add app bar (102)
       // TODO: Add a grid view (102)
       body: Center(
         child: Text('You did it!'),
       ),
+      resizeToAvoidBottomInset: false,
+
       // TODO: Set resizeToAvoidBottomInset (101)
     );
   }
